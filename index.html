@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GrafixPro en Santiago de los Caballeros: letreros 3D LED, acrílicos, ACM, impresión, rotulación, DTF, sublimación, bordados y personalizados. Solicita tu cotización por WhatsApp.">
+  <meta name="theme-color" content="#101522">
+  <title>GrafixPro | Imagina, Diseña, Impacta</title>
+  <style>
+    :root{--bg:#0d111b;--panel:#151c2a;--text:#f7f8fc;--muted:#b5bdcc;--blue:#255cff;--orange:#ff8a26;--line:rgba(255,255,255,.12)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none} img{display:block;max-width:100%} .container{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topbar{border-bottom:1px solid var(--line);font-size:13px;color:var(--muted);padding:9px 0} .topbar .container{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:10;background:rgba(13,17,27,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px} .brand{font-weight:900;font-size:25px;letter-spacing:-1px} .brand span{color:var(--blue)} .brand small{display:block;font-size:9px;letter-spacing:3px;color:var(--muted);font-weight:700;margin-top:-5px}
+    .navlinks{display:flex;align-items:center;gap:24px;font-size:14px;color:#e4e8f0} .navlinks a:hover{color:#8eaaff}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:9px;padding:13px 19px;font-weight:800;font-size:14px;transition:.2s;border:1px solid transparent}
+    .btn-primary{background:var(--blue);color:white;box-shadow:0 10px 30px rgba(37,92,255,.24)} .btn-primary:hover{transform:translateY(-2px);background:#3c6cff}
+    .btn-outline{border-color:rgba(255,255,255,.3);color:white} .btn-outline:hover{background:rgba(255,255,255,.08)}
+    .hero{padding:76px 0 70px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 20%,rgba(37,92,255,.19),transparent 42%),radial-gradient(ellipse at 5% 90%,rgba(255,138,38,.10),transparent 38%)}
+    .hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:55px;align-items:center} .eyebrow{color:#8eaaff;text-transform:uppercase;font-size:12px;letter-spacing:2.5px;font-weight:900;display:flex;align-items:center;gap:10px} .eyebrow:before{content:"";height:2px;width:28px;background:var(--orange)}
+    h1{font-size:clamp(42px,5.5vw,68px);line-height:1.02;letter-spacing:-2.7px;margin:18px 0 22px} h1 em{font-style:normal;color:#7294ff} .hero p{font-size:17px;color:var(--muted);max-width:560px;margin:0 0 28px} .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-note{display:flex;gap:22px;margin-top:34px;color:var(--muted);font-size:12px;flex-wrap:wrap} .hero-note strong{display:block;color:white;font-size:16px}
+    .hero-visual{position:relative} .hero-photo{height:480px;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.18);box-shadow:0 30px 80px rgba(0,0,0,.35);position:relative} .hero-photo img{width:100%;height:100%;object-fit:cover}
+    .photo-label{position:absolute;bottom:18px;left:18px;right:18px;padding:15px 17px;background:rgba(10,14,24,.82);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(10px);border-radius:12px} .photo-label small{color:#a9bbff;text-transform:uppercase;letter-spacing:1.6px;font-size:10px;font-weight:900} .photo-label strong{display:block;font-size:18px}
+    section{padding:82px 0} .section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:34px} .section-head h2{font-size:clamp(30px,4vw,44px);letter-spacing:-1.5px;line-height:1.12;margin:9px 0 0} .section-head p{max-width:470px;color:var(--muted);margin:0}
+    .services{background:#111725} .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px} .service{padding:25px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015));border-radius:14px;min-height:190px;transition:.2s} .service:hover{border-color:rgba(114,148,255,.65);transform:translateY(-3px)} .service-icon{width:43px;height:43px;border-radius:12px;background:rgba(37,92,255,.15);color:#9bb2ff;display:grid;place-items:center;font-size:21px;margin-bottom:19px} .service h3{font-size:18px;margin:0 0 8px} .service p{font-size:14px;color:var(--muted);margin:0}
+    .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px} .work-card{height:300px;position:relative;overflow:hidden;border-radius:13px;background:var(--panel);border:1px solid var(--line)} .work-card img{width:100%;height:100%;object-fit:cover;transition:transform .45s} .work-card:hover img{transform:scale(1.05)} .work-overlay{position:absolute;bottom:0;left:0;right:0;padding:28px 17px 16px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-size:14px;font-weight:800;display:flex;justify-content:space-between;align-items:end} .work-overlay b{font-size:22px}
+    .why-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center} .why-panel{padding:35px;border-radius:18px;background:linear-gradient(140deg,#1d2a47,#151b29);border:1px solid var(--line)} .why-panel .brand{font-size:34px} .why-panel p{color:var(--muted)} .feature-list{display:grid;grid-template-columns:1fr 1fr;gap:24px} .feature{border-top:1px solid var(--line);padding-top:17px} .feature b{display:block;font-size:17px;margin-bottom:5px} .feature span{font-size:14px;color:var(--muted)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px} .step{padding:22px;border:1px solid var(--line);border-radius:13px} .step-num{color:var(--orange);font-weight:900;font-size:12px;letter-spacing:2px} .step h3{margin:12px 0 7px;font-size:17px} .step p{margin:0;color:var(--muted);font-size:14px}
+    .cta-section{padding:20px 0 82px} .cta-box{padding:48px;display:flex;align-items:center;justify-content:space-between;gap:30px;border-radius:20px;background:linear-gradient(115deg,#214be0,#142b73 75%,#192239);position:relative;overflow:hidden} .cta-box:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:12%;top:-180px;box-shadow:0 0 0 35px rgba(255,255,255,.03),0 0 0 70px rgba(255,255,255,.025)} .cta-box>*{position:relative;z-index:1} .cta-box h2{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:0 0 12px} .cta-box p{color:#dbe3ff;margin:0;max-width:560px} .cta-box .btn{background:white;color:#142b73;white-space:nowrap}
+    footer{border-top:1px solid var(--line);padding:35px 0 24px} .footer-main{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;padding-bottom:27px} footer p,footer a{color:var(--muted);font-size:14px} .footer-links{display:flex;gap:17px;flex-wrap:wrap} .copyright{border-top:1px solid var(--line);padding-top:18px;color:#7f899c;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .float-wa{position:fixed;right:20px;bottom:20px;z-index:20;background:#20c66b;color:#06190e;border-radius:99px;padding:13px 18px;font-weight:900;box-shadow:0 10px 30px #0006}
+    @media(max-width:850px){.navlinks{display:none}.hero-grid,.why-grid{grid-template-columns:1fr}.hero{padding-top:52px}.hero-visual{max-width:650px}.hero-photo{height:400px}.service-grid{grid-template-columns:repeat(2,1fr)}.work-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}.cta-box{align-items:flex-start;flex-direction:column;padding:34px}}
+    @media(max-width:540px){.container{width:min(100% - 28px,1160px)}.topbar .container{font-size:11px}nav{min-height:68px}.brand{font-size:22px}.hero{padding:43px 0 50px}h1{letter-spacing:-1.7px}.hero p{font-size:15px}.hero-photo{height:330px}section{padding:60px 0}.service-grid,.work-grid,.feature-list,.steps{grid-template-columns:1fr}.work-card{height:330px}.service{min-height:0}.cta-box{padding:28px 23px}.float-wa{right:12px;bottom:12px;padding:11px 15px;font-size:13px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>Santiago de los Caballeros, República Dominicana</span><span>WhatsApp: 829-519-9448 · GrafixPro16@gmail.com</span></div></div>
+  <header><nav class="container">
+    <a class="brand" href="#inicio">Grafix<span>Pro</span><small>IMAGINA · DISEÑA · IMPACTA</small></a>
+    <div class="navlinks"><a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
+    <a class="btn btn-primary" href="https://wa.me/18295199448?text=Hola%20GrafixPro%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">Cotizar ahora ↗</a>
+  </nav></header>
+
+  <main>
+    <section class="hero" id="inicio"><div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Soluciones visuales para tu marca</div>
+        <h1>Hacemos que tu marca <em>destaque.</em></h1>
+        <p>Transformamos tus ideas en letreros, impresiones y soluciones visuales que proyectan una imagen profesional y ayudan a tu negocio a llamar la atención.</p>
+        <div class="actions"><a class="btn btn-primary" href="https://wa.me/18295199448?text=Hola%20GrafixPro%2C%20quiero%20cotizar%20un%20proyecto." target="_blank" rel="noopener">✦ Cotizar por WhatsApp</a><a class="btn btn-outline" href="#trabajos">Ver nuestros trabajos ↓</a></div>
+        <div class="hero-note"><div><strong>Diseño a tu medida</strong>Proyectos personalizados</div><div><strong>Varios servicios</strong>Soluciones para tu marca</div><div><strong>Atención directa</strong>Hablemos de tu idea</div></div>
+      </div>
+      <div class="hero-visual"><div class="hero-photo"><img src="assets/trabajo-01.png" alt="Letrero corporativo tridimensional realizado por GrafixPro"><div class="photo-label"><small>Diseño · Fabricación · Imagen</small><strong>Tu marca merece destacar.</strong></div></div></div>
+    </div></section>
+
+    <section class="services" id="servicios"><div class="container">
+      <div class="section-head"><div><div class="eyebrow">Qué hacemos</div><h2>Soluciones para que<br>tu negocio se vea mejor.</h2></div><p>Desde la fachada de tu negocio hasta los detalles personalizados, te ayudamos a llevar la imagen de tu marca a otro nivel.</p></div>
+      <div class="service-grid">
+        <article class="service"><div class="service-icon">✧</div><h3>Letreros y señalización</h3><p>Letreros 3D con LED, acrílicos, ACM/Alucobond y letreros tipo neón.</p></article>
+        <article class="service"><div class="service-icon">▧</div><h3>Impresión publicitaria</h3><p>Impresión de vinil, impresión en plotter, stickers y gráficos para promocionar tu negocio.</p></article>
+        <article class="service"><div class="service-icon">▱</div><h3>Rotulación de vehículos</h3><p>Gráficos y rotulación para convertir tus vehículos en una herramienta de promoción.</p></article>
+        <article class="service"><div class="service-icon">✂</div><h3>Corte y personalizados láser</h3><p>Trabajos personalizados y piezas con corte láser para distintas aplicaciones.</p></article>
+        <article class="service"><div class="service-icon">◈</div><h3>Textiles y prendas</h3><p>Impresión DTF, sublimación y bordados para prendas y artículos promocionales.</p></article>
+        <article class="service"><div class="service-icon">＋</div><h3>Proyectos a medida</h3><p>¿Tienes una idea diferente? Cuéntanos lo que necesitas y conversemos sobre tu proyecto.</p></article>
+      </div>
+    </div></section>
+
+    <section id="trabajos"><div class="container">
+      <div class="section-head"><div><div class="eyebrow">Nuestro portafolio</div><h2>Trabajos que hablan<br>por sí solos.</h2></div><p>Una muestra de proyectos realizados. Cada marca tiene una idea diferente; nuestro trabajo es ayudar a hacerla realidad.</p></div>
+      <div class="work-grid">
+        <a class="work-card" href="assets/trabajo-01.png" target="_blank" aria-label="Ver fotografía del trabajo 1">
+          <img src="assets/trabajo-01.png" alt="Proyecto realizado por GrafixPro" loading="lazy">
+          <span class="work-overlay">Proyecto GrafixPro <b>↗</b></span>
+        </a>
+        <a class="work-card" href="assets/trabajo-02.png" target="_blank" aria-label="Ver fotografía del trabajo 2">
+          <img src="assets/trabajo-02.png" alt="Proyecto realizado por GrafixPro" loading="lazy">
+          <span class="work-overlay">Proyecto GrafixPro <b>↗</b></span>
+        </a>
+        <a class="work-card" href="assets/trabajo-03.png" target="_blank" aria-label="Ver fotografía del trabajo 3">
+          <img src="assets/trabajo-03.png" alt="Proyecto realizado por GrafixPro" loading="lazy">
+          <span class="work-overlay">Proyecto GrafixPro <b>↗</b></span>
+        </a>
+        <a class="work-card" href="assets/trabajo-04.png" target="_blank" aria-label="Ver fotografía del trabajo 4">
+          <img src="assets/trabajo-04.png" alt="Proyecto realizado por GrafixPro" loading="lazy">
+          <span class="work-overlay">Proyecto GrafixPro <b>↗</b></span>
+        </a>
+        <a class="work-card" href="assets/trabajo-05.png" target="_blank" aria-label="Ver fotografía del trabajo 5">
+          <img src="assets/trabajo-05.png" alt="Proyecto realizado por GrafixPro" loading="lazy">
+          <span class="work-overlay">Proyecto GrafixPro <b>↗</b></span>
+        </a>
+        <a class="work-card" href="assets/trabajo-06.png" target="_blank" aria-label="Ver fotografía del trabajo 6">
+          <img src="assets/trabajo-06.png" alt="Proyecto realizado por GrafixPro" loading="lazy">
+          <span class="work-overlay">Proyecto GrafixPro <b>↗</b></span>
+        </a>
+        <a class="work-card" href="assets/trabajo-07.png" target="_blank" aria-label="Ver fotografía del trabajo 7">
+          <img src="assets/trabajo-07.png" alt="Proyecto realizado por GrafixPro" loading="lazy">
+          <span class="work-overlay">Proyecto GrafixPro <b>↗</b></span>
+        </a>
+        <a class="work-card" href="assets/trabajo-08.png" target="_blank" aria-label="Ver fotografía del trabajo 8">
+          <img src="assets/trabajo-08.png" alt="Proyecto realizado por GrafixPro" loading="lazy">
+          <span class="work-overlay">Proyecto GrafixPro <b>↗</b></span>
+        </a>
+        <a class="work-card" href="assets/trabajo-09.png" target="_blank" aria-label="Ver fotografía del trabajo 9">
+          <img src="assets/trabajo-09.png" alt="Proyecto realizado por GrafixPro" loading="lazy">
+          <span class="work-overlay">Proyecto GrafixPro <b>↗</b></span>
+        </a>
+        <a class="work-card" href="assets/trabajo-10.png" target="_blank" aria-label="Ver fotografía del trabajo 10">
+          <img src="assets/trabajo-10.png" alt="Proyecto realizado por GrafixPro" loading="lazy">
+          <span class="work-overlay">Proyecto GrafixPro <b>↗</b></span>
+        </a>
+      </div>
+    </div></section>
+
+    <section id="nosotros" class="services"><div class="container why-grid">
+      <div class="why-panel"><div class="brand">Grafix<span style="color:#7194ff">Pro</span></div><p style="font-size:12px;letter-spacing:2px;font-weight:800;color:#aabaff">IMAGINA, DISEÑA, IMPACTA</p><p>Mejoramos la imagen visual de tu negocio con soluciones gráficas y publicitarias pensadas para destacar tu marca.</p><a class="btn btn-outline" href="https://www.instagram.com/grafixpro.do/" target="_blank" rel="noopener">Síguenos en Instagram ↗</a></div>
+      <div><div class="eyebrow">Por qué GrafixPro</div><h2 style="font-size:clamp(30px,4vw,44px);line-height:1.12;letter-spacing:-1.5px;margin:12px 0 28px">Tu idea es el comienzo.<br>Vamos a darle forma.</h2><div class="feature-list">
+        <div class="feature"><b>Diseño personalizado</b><span>Propuestas adaptadas a la identidad y necesidades de tu marca.</span></div>
+        <div class="feature"><b>Variedad de soluciones</b><span>Diferentes servicios visuales en un mismo lugar.</span></div>
+        <div class="feature"><b>Enfoque en tu negocio</b><span>Proyectos pensados para presentar tu marca con claridad.</span></div>
+        <div class="feature"><b>Comunicación directa</b><span>Cuéntanos qué necesitas y conversemos sobre opciones y cotización.</span></div>
+      </div></div>
+    </div></section>
+
+    <section><div class="container">
+      <div class="section-head"><div><div class="eyebrow">Cómo trabajamos</div><h2>De tu idea a un proyecto real.</h2></div><p>Un proceso sencillo para que puedas explicarnos lo que necesitas y avanzar con claridad.</p></div>
+      <div class="steps"><div class="step"><div class="step-num">PASO 01</div><h3>Cuéntanos tu idea</h3><p>Comparte qué quieres hacer y para qué negocio o marca.</p></div><div class="step"><div class="step-num">PASO 02</div><h3>Definimos el proyecto</h3><p>Revisamos detalles, medidas, materiales y necesidades.</p></div><div class="step"><div class="step-num">PASO 03</div><h3>Recibe tu cotización</h3><p>Conversamos sobre la solución adecuada para tu proyecto.</p></div><div class="step"><div class="step-num">PASO 04</div><h3>¡Manos a la obra!</h3><p>Avanzamos según los detalles acordados.</p></div></div>
+    </div></section>
+
+    <section class="cta-section" id="contacto"><div class="container"><div class="cta-box"><div><h2>¿Tienes un proyecto<br>en mente?</h2><p>Escríbenos y cuéntanos qué necesitas. En GrafixPro te ayudamos a encontrar una solución para tu marca.</p></div><a class="btn" href="https://wa.me/18295199448?text=Hola%20GrafixPro%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20cotizar." target="_blank" rel="noopener">Hablar por WhatsApp ↗</a></div></div></section>
+  </main>
+
+  <footer><div class="container"><div class="footer-main">
+    <div><a class="brand" href="#inicio">Grafix<span>Pro</span><small>IMAGINA · DISEÑA · IMPACTA</small></a><p>Soluciones visuales para marcas y negocios.<br>Santiago de los Caballeros, República Dominicana.</p></div>
+    <div><strong>Contacto</strong><p><a href="https://wa.me/18295199448" target="_blank" rel="noopener">WhatsApp: 829-519-9448</a><br><a href="mailto:Grafixpro16@gmail.com">Grafixpro16@gmail.com</a></p><div class="footer-links"><a href="https://www.instagram.com/grafixpro.do/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@Grafixpro5" target="_blank" rel="noopener">TikTok</a></div></div>
+  </div><div class="copyright"><span>© <span id="year"></span> GrafixPro. Todos los derechos reservados.</span><span>Imagina, Diseña, Impacta.</span></div></div></footer>
+  <a class="float-wa" href="https://wa.me/18295199448?text=Hola%20GrafixPro%2C%20quiero%20informaci%C3%B3n." target="_blank" rel="noopener" aria-label="Contactar GrafixPro por WhatsApp">WhatsApp ↗</a>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
